@@ -1,0 +1,10 @@
+{
+  "version": "1",
+  "managedBy": "RepoMind",
+  "note": "This file is overwritten by RepoMind when a verification session prepares a task for IBM Bob.",
+  "changeRequest": "",
+  "affectedFiles": [],
+  "riskLevel": "",
+  "acceptanceCriteria": [],
+  "verificationCommands": ["npm run build", "npm test"]
+}
