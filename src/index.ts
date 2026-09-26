@@ -44,7 +44,8 @@ app.post('/tasks', (req: Request, res: Response) => {
   };
 
   tasks.set(task.id, task);
-  res.status(201).json(task);
+  // BUG: wrong status code — should be 201 Created
+  res.status(200).json(task);
 });
 
 // GET /tasks/:id — get a single task
