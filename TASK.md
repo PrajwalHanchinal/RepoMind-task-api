@@ -8,7 +8,7 @@
 
 ## Change Request
 
-Add a status field to POST /tasks response and ensure tests cover it
+Add a priority field to tasks
 
 ---
 
@@ -18,13 +18,13 @@ Add a status field to POST /tasks response and ensure tests cover it
 
 ### Affected Files
 
-- `tests/task.test.ts`
+- `src/index.ts`
 
 ---
 
 ## Acceptance Criteria
 
-- Run tests in: tests/task.test.ts
+- Run full test suite covering: tests/task.test.ts
 - npm run build must exit 0
 - npm test must exit 0
 

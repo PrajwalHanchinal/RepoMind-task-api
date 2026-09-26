@@ -1,12 +1,12 @@
 {
   "version": "1",
-  "changeRequest": "Add a status field to POST /tasks response and ensure tests cover it",
+  "changeRequest": "Add a priority field to tasks",
   "affectedFiles": [
-    "tests/task.test.ts"
+    "src/index.ts"
   ],
   "riskLevel": "high",
   "acceptanceCriteria": [
-    "Run tests in: tests/task.test.ts",
+    "Run full test suite covering: tests/task.test.ts",
     "npm run build must exit 0",
     "npm test must exit 0"
   ],
