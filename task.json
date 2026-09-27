@@ -1,12 +1,14 @@
 {
   "version": "1",
-  "changeRequest": "Add a priority field to tasks",
+  "changeRequest": "Add a priority field to tasks with validation and ensure task creation returns 201",
   "affectedFiles": [
-    "src/index.ts"
+    "TASK.md",
+    "task.json",
+    "tests/task.test.ts"
   ],
   "riskLevel": "high",
   "acceptanceCriteria": [
-    "Run full test suite covering: tests/task.test.ts",
+    "Run tests in: tests/task.test.ts",
     "npm run build must exit 0",
     "npm test must exit 0"
   ],

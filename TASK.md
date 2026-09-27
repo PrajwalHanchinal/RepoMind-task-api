@@ -8,7 +8,7 @@
 
 ## Change Request
 
-Add a priority field to tasks
+Add a priority field to tasks with validation and ensure task creation returns 201
 
 ---
 
@@ -18,13 +18,15 @@ Add a priority field to tasks
 
 ### Affected Files
 
-- `src/index.ts`
+- `TASK.md`
+- `task.json`
+- `tests/task.test.ts`
 
 ---
 
 ## Acceptance Criteria
 
-- Run full test suite covering: tests/task.test.ts
+- Run tests in: tests/task.test.ts
 - npm run build must exit 0
 - npm test must exit 0
 
