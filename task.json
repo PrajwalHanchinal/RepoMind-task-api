@@ -1,10 +1,19 @@
 {
   "version": "1",
-  "managedBy": "RepoMind",
-  "note": "This file is overwritten by RepoMind when a verification session prepares a task for IBM Bob.",
-  "changeRequest": "",
-  "affectedFiles": [],
-  "riskLevel": "",
-  "acceptanceCriteria": [],
-  "verificationCommands": ["npm run build", "npm test"]
+  "changeRequest": "Add a priority field to tasks with validation and ensure task creation returns 201",
+  "affectedFiles": [
+    "TASK.md",
+    "task.json",
+    "tests/task.test.ts"
+  ],
+  "riskLevel": "high",
+  "acceptanceCriteria": [
+    "Run tests in: tests/task.test.ts",
+    "npm run build must exit 0",
+    "npm test must exit 0"
+  ],
+  "verificationCommands": [
+    "npm run build",
+    "npm test"
+  ]
 }
